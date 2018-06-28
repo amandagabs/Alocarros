@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ControleAcesso.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,14 +26,26 @@ namespace ControleAcesso
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void CadastroFuncionario_Click(object sender, RoutedEventArgs e)
         {
+            TelaCadastroFuncionario tela = new TelaCadastroFuncionario();
+            tela.Show();
+            Close();
 
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void ListarFuncionario_Click(object sender, RoutedEventArgs e)
         {
+            TelaListarFuncionario tela = new TelaListarFuncionario();
+            tela.Show();
+            Close();
+        }
 
+        private void EditarFuncionario_Click(object sender, RoutedEventArgs e)
+        {
+            TelaEditarFuncionario tela = new TelaEditarFuncionario();
+            tela.Show();
+            Close();
         }
     }
 }
