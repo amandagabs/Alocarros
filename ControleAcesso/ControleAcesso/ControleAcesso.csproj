@@ -62,11 +62,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Controller\Atividade.cs" />
+    <Compile Include="Controller\Base\BaseController.cs" />
     <Compile Include="Controller\Contexto.cs" />
-    <Compile Include="Controller\contexto1.cs" />
     <Compile Include="Controller\FuncionarioController.cs" />
-    <Compile Include="Controller\IBaseController.cs" />
+    <Compile Include="Controller\Base\IBaseController.cs" />
     <Compile Include="Controller\VisitanteController.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
