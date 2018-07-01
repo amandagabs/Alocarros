@@ -47,5 +47,10 @@ namespace ControleAcesso
             tela.Show();
             Close();
         }
+
+        private void Grid_ContextMenuClosing(object sender, ContextMenuEventArgs e)
+        {
+
+        }
     }
 }

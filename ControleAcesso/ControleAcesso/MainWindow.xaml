@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:ControleAcesso"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid OpacityMask="White" Background="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}">
-        <Button x:Name="CadastroFuncionario" Content="Cadastro Funcionário" Margin="36,57,0,0" Width="217" Height="39" FontSize="16" FontFamily="Nasalization Rg" Background="#FF9B9B9B" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Click="CadastroFuncionario_Click">
+    <Grid OpacityMask="White" Background="#FFC8C8C8">
+        <Button x:Name="CadastroFuncionario" Content="Cadastro Funcionário" Margin="36,102,0,0" Width="217" Height="39" FontSize="18" FontFamily="Times New Roman" Background="#FF438285" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Click="CadastroFuncionario_Click">
             <Button.OpacityMask>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -15,7 +15,7 @@
                 </LinearGradientBrush>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="CadastroVisitante" Content="Cadastro Visitante" Margin="36,128,0,0" Width="217" Height="39" FontSize="16" FontFamily="Nasalization Rg" Background="#FF9B9B9B" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Button x:Name="CadastroVisitante" Content="Cadastro Visitante" Margin="36,173,0,0" Width="217" Height="39" FontSize="18" FontFamily="Times New Roman" Background="#FF438285" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Button.OpacityMask>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -23,7 +23,7 @@
                 </LinearGradientBrush>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="ListarFuncionario" Content="Listar Funcionário" Margin="285,57,0,0" Width="217" Height="39" FontSize="16" FontFamily="Nasalization Rg" Background="#FF9B9B9B" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ListarFuncionario_Click">
+        <Button x:Name="ListarFuncionario" Content="Listar Funcionário" Margin="287,102,0,0" Width="217" Height="39" FontSize="18" FontFamily="Times New Roman" Background="#FF438285" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ListarFuncionario_Click">
             <Button.OpacityMask>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -31,7 +31,7 @@
                 </LinearGradientBrush>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="EditarFuncionario" Content="Editar Funcionário" Margin="541,57,0,0" Width="217" Height="39" FontSize="16" FontFamily="Nasalization Rg" Background="#FF9B9B9B" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Click="EditarFuncionario_Click">
+        <Button x:Name="EditarFuncionario" Content="Editar Funcionário" Margin="541,102,0,0" Width="217" Height="39" FontSize="18" FontFamily="Times New Roman" Background="#FF438285" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Click="EditarFuncionario_Click">
             <Button.OpacityMask>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -39,6 +39,7 @@
                 </LinearGradientBrush>
             </Button.OpacityMask>
         </Button>
+        <Label Content="Controle de Acesso" HorizontalAlignment="Left" Margin="29,10,0,0" VerticalAlignment="Top" Height="71" Width="415" FontFamily="Calibri" FontWeight="Bold" FontSize="48"/>
 
     </Grid>
 </Window>

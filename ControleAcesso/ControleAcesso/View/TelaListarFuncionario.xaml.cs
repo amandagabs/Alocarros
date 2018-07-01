@@ -23,5 +23,10 @@ namespace ControleAcesso.View
         {
             InitializeComponent();
         }
+
+        private void Cadastrar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
