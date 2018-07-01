@@ -12,7 +12,7 @@
         <TextBox x:Name="Nasc" HorizontalAlignment="Left" Height="23" Margin="44,160,0,0" TextWrapping="Wrap" Text="Data Nascimento" VerticalAlignment="Top" Width="208"/>
         <TextBox x:Name="Empresa" HorizontalAlignment="Left" Height="23" Margin="44,196,0,0" TextWrapping="Wrap" Text="Empresa" VerticalAlignment="Top" Width="208"/>
         <Button x:Name="Voltar" Content="Voltar" HorizontalAlignment="Left" Margin="45,269,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Cadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="177,269,0,0" VerticalAlignment="Top" Width="74"/>
+        <Button x:Name="Cadastrar" Content="Salvar" HorizontalAlignment="Left" Margin="177,269,0,0" VerticalAlignment="Top" Width="74"/>
         <TextBox x:Name="Matricula" HorizontalAlignment="Left" Height="23" Margin="44,231,0,0" TextWrapping="Wrap" Text="Matrícula" VerticalAlignment="Top" Width="208"/>
         <Label Content="Editar Funcionário" HorizontalAlignment="Left" Margin="29,10,0,0" VerticalAlignment="Top" Height="71" Width="438" FontFamily="Calibri" FontWeight="Bold" FontSize="48"/>
 
