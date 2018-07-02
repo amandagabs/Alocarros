@@ -50,11 +50,6 @@ namespace ControleAcesso
             Close();
         }
 
-        private void Grid_ContextMenuClosing(object sender, ContextMenuEventArgs e)
-        {
-
-        }
-
         private void CadastroVisitante_Click(object sender, RoutedEventArgs e)
         {
             TelaCadastroVisitante tela = new TelaCadastroVisitante();
@@ -74,6 +69,11 @@ namespace ControleAcesso
             TelaEditarVisitante tela = new TelaEditarVisitante();
             tela.Show();
             Close();
+        }
+
+        private void Grid_ContextMenuClosing(object sender, ContextMenuEventArgs e)
+        {
+
         }
     }
 }
