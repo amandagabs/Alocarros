@@ -24,5 +24,10 @@ namespace ControleAcesso.View
         {
             InitializeComponent();
         }
+
+        internal void Show()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
