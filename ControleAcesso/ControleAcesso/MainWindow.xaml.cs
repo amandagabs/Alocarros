@@ -71,7 +71,8 @@ namespace ControleAcesso
 
         private void EditarVisitante_Click(object sender, RoutedEventArgs e)
         {
-            
+            TelaEditarVisitante tela = new TelaEditarVisitante();
+            tela.Show();
             Close();
         }
     }
