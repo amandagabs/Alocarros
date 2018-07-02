@@ -1,0 +1,26 @@
+﻿<Page x:Class="ControleAcesso.View.TelaCadastroVisitante"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ControleAcesso.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TelaCadastroVisitante">
+
+    <Grid x:Name="Nome" Background="#FFC8C8C8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="98*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="EditarNome" HorizontalAlignment="Left" Height="23" Margin="44,88,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Width="208"/>
+        <TextBox x:Name="EditarCPF" HorizontalAlignment="Left" Height="23" Margin="44,124,0,0" TextWrapping="Wrap" Text="CPF" VerticalAlignment="Top" Width="208"/>
+        <TextBox x:Name="EditarNasc" HorizontalAlignment="Left" Height="23" Margin="44,160,0,0" TextWrapping="Wrap" Text="Data Nascimento" VerticalAlignment="Top" Width="208"/>
+        <TextBox x:Name="EditarEmpresa" HorizontalAlignment="Left" Height="23" Margin="44,196,0,0" TextWrapping="Wrap" Text="Horario" VerticalAlignment="Top" Width="208"/>
+        <TextBox x:Name="EditarHorario" HorizontalAlignment="Left" Height="23" Margin="44,269,0,0" TextWrapping="Wrap" Text="Empresa" VerticalAlignment="Top" Width="208"/>
+        <Button x:Name="Voltar" Content="Voltar" HorizontalAlignment="Left" Margin="45,300,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Cadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="177,300,0,0" VerticalAlignment="Top" Width="74"/>
+        <TextBox x:Name="EditarMatricula" HorizontalAlignment="Left" Height="23" Margin="44,231,0,0" TextWrapping="Wrap" Text="Matrícula" VerticalAlignment="Top" Width="208"/>
+        <Label Content="Cadastro Visitante" HorizontalAlignment="Left" Margin="29,10,0,0" VerticalAlignment="Top" Height="71" Width="438" FontFamily="Calibri" FontWeight="Bold" FontSize="48"/>
+    </Grid>
+</Page>

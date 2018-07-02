@@ -21,6 +21,8 @@ namespace ControleAcesso
     /// </summary>
     public partial class MainWindow : Window
     {
+        private object tela;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -51,6 +53,26 @@ namespace ControleAcesso
         private void Grid_ContextMenuClosing(object sender, ContextMenuEventArgs e)
         {
 
+        }
+
+        private void CadastroVisitante_Click(object sender, RoutedEventArgs e)
+        {
+            TelaCadastroVisitante tela = new TelaCadastroVisitante();
+            tela.show();
+            Close();
+        }
+
+        private void ListarVisitante_Click(object sender, RoutedEventArgs e)
+        {
+            TelaListarVisitante tela = new TelaListarVisitante();
+            tela.show();
+            Close();
+        }
+
+        private void EditarVisitante_Click(object sender, RoutedEventArgs e)
+        {
+            
+            Close();
         }
     }
 }
