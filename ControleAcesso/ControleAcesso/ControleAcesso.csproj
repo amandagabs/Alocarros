@@ -36,6 +36,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -54,15 +56,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="View\TelaCadastroFuncionario.xaml.cs">
-      <DependentUpon>TelaCadastroFuncionario.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\TelaEditarFuncionario.xaml.cs">
-      <DependentUpon>TelaEditarFuncionario.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\TelaListarFuncionario.xaml.cs">
-      <DependentUpon>TelaListarFuncionario.xaml</DependentUpon>
-    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -109,6 +102,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Visitante.resx">
+      <DependentUpon>Visitante.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
