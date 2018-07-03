@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ControleAcesso.Model
 {
-    class Funcionario
+    public class Funcionario
     {
         [Key]
 

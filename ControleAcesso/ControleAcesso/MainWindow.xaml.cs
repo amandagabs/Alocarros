@@ -21,7 +21,6 @@ namespace ControleAcesso
     /// </summary>
     public partial class MainWindow : Window
     {
-        private object tela;
 
         public MainWindow()
         {
