@@ -68,15 +68,6 @@
     <Compile Include="View\TelaCadastroFuncionario.xaml.cs">
       <DependentUpon>TelaCadastroFuncionario.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\TelaCadastroVisitante.xaml.cs">
-      <DependentUpon>TelaCadastroVisitante.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\TelaEditarVisitante.xaml.cs">
-      <DependentUpon>TelaEditarVisitante.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\TelaListarVisitante.xaml.cs">
-      <DependentUpon>TelaListarVisitante.xaml</DependentUpon>
-    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -86,7 +77,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Controller\FuncionarioController.cs" />
-    <Compile Include="Controller\VisitanteController.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -95,15 +85,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\TelaCadastroVisitante.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\TelaEditarFuncionario.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\TelaEditarVisitante.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -111,14 +93,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\TelaListarVisitante.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Funcionario.cs" />
-    <Compile Include="Model\Visitante.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
