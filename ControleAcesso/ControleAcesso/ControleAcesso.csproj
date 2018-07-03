@@ -56,6 +56,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controller\Base\lbaseController.cs" />
     <Compile Include="View\TelaCadastroVisitante.xaml.cs">
       <DependentUpon>TelaCadastroVisitante.xaml</DependentUpon>
     </Compile>
