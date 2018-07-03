@@ -1,19 +1,21 @@
-﻿using System;
+﻿using ControleAcesso.Model;
+using System;
+using System.Data.Entity;
 
 namespace ControleAcesso.Controller
 {
     internal class Contexto : DbContext
     {
+
         public Contexto() : base("srtConn")
         {
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<Contexto>());
+        
         }
 
-        public DbSet<Model.Visitante> Visitante { get; set; }
+        public DbSet<Visitante> Visitantes { get; set; }
+        public DbSet<Funcionario> Funcionarios { get; set; }
 
-        internal void SaveChanges()
-        {
-            throw new NotImplementedException();
-        }
+
+
     }
 }
