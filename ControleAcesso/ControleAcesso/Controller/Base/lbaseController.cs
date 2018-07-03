@@ -12,7 +12,9 @@ namespace ControleAcesso.Controller.Base
 
         IList<T> ListarTodos();
 
-        IList<T> ListarPorNome(string nome);
+        IList<T> ListarVisitante();
+
+        IList<T> ListarPorNome(string Nome);
 
         IList<T> ListarPorID(string VisitanteID);
 
