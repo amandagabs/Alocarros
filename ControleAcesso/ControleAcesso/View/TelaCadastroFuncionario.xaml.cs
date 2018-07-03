@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ControleAcesso.Controller;
+using ControleAcesso.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,26 @@ namespace ControleAcesso.View
         public TelaCadastroFuncionario()
         {
             InitializeComponent();
+        }
+
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow tela = new MainWindow();
+            tela.Show();
+            Close();
+
+        }
+
+        private void Cadastrar_Click(object sender, RoutedEventArgs e)
+        {
+            FuncionarioController funcionarioController = new FuncionarioController();
+            Funcionario funcionario = new Funcionario();
+            funcionario.Nome = txtNome.Text;
+            funcionario.CPF = txtCPF.Text;
+            funcionario.Nasc = txtNasc.Text;
+            funcionario.Telefone = txtTelefone.Text;
+            funcionario.Empresa = txtEmpresa.Text;
+            funcionarioController.Adicionar(funcionario);
         }
     }
 }
