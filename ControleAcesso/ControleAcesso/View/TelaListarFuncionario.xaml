@@ -5,13 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ControleAcesso.View"
         mc:Ignorable="d"
-        Title="TelaListarFuncionario" Height="450" Width="800">
+        Title="TelaListarFuncionario" Height="450" Width="414">
     <Grid Background="#FFC8C8C8">
         <TextBox x:Name="Nome" HorizontalAlignment="Left" Height="23" Margin="44,83,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Width="208"/>
-        <Button x:Name="Voltar" Content="Voltar" HorizontalAlignment="Left" Margin="45,120,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Cadastrar" Content="Editar" HorizontalAlignment="Left" Margin="177,120,0,0" VerticalAlignment="Top" Width="74"/>
+        <Button x:Name="Voltar" Content="Voltar" HorizontalAlignment="Left" Margin="60,120,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Excluir" Content="Excluir" HorizontalAlignment="Left" Margin="259,120,0,30" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Cadastrar" Content="Editar" HorizontalAlignment="Left" Margin="155,120,0,0" VerticalAlignment="Top" Width="74"/>
         <Label Content="Listar Funcionário" HorizontalAlignment="Left" Margin="29,10,0,0" VerticalAlignment="Top" Height="71" Width="415" FontFamily="Calibri" FontWeight="Bold" FontSize="48"/>
         <Button x:Name="Cadastrar_Copy" Content="Pesquisar" HorizontalAlignment="Left" Margin="260,85,0,0" VerticalAlignment="Top" Width="74"/>
+        <DataGrid HorizontalAlignment="Left" Height="245" Margin="50,150,0,0" VerticalAlignment="Top" Width="255"/>
 
     </Grid>
 </Window>

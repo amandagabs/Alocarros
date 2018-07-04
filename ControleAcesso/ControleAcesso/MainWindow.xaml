@@ -40,9 +40,6 @@
                 </LinearGradientBrush>
             </Button.OpacityMask>
         </Button>
-        <Button x:Name="ListarVisitante" Content="Listar Visitante" Margin="3,0,0,39" Width="217" Height="39" FontSize="18" FontFamily="Times New Roman" Background="White" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Center"  Click="ListarVisitante_Click">
-        </Button>
-        <Button x:Name="EditarVisitante" Content=" Editar Visitante" Margin="29,10,31,49" Width="217" Height="39" FontSize="18" FontFamily="Times New Roman" Background="White" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Right"  Click="EditarVisitante_Click" RenderTransformOrigin="0.092,0.641"></Button>
         <Label Content="Controle de Acesso" HorizontalAlignment="Left" Margin="29,10,0,0" VerticalAlignment="Top" Height="71" Width="415" FontFamily="Calibri" FontWeight="Bold" FontSize="48"/>
         <Label Content="Amanda Santos e Paulo Sergio" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="34" Width="184" FontFamily="Calibri"  FontSize="14" />
 

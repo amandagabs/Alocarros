@@ -22,5 +22,16 @@ namespace ControleAcesso.Controller
 
             return contexto.Funcionarios.Where(f => f.CPF.Contains(find) || f.Nome.ToLower().Contains(find.ToLower())).ToList();
         }
+
+        public void Atualizar(Funcionario entity)
+        {
+            contexto.Entry(entity).State = System.Data.Entity.EntityState.Modified;
+            contexto.SaveChanges();
+        }
+        public void Desativar(Funcionario funcionario)
+        {
+            contexto.Entry(funcionario).State = System.Data.Entity.EntityState.Deleted;
+            contexto.SaveChanges();
+        }
     }
 }

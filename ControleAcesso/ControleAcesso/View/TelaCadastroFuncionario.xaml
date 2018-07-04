@@ -5,17 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ControleAcesso.View"
         mc:Ignorable="d"
-        Title="TelaCadastroFuncionario" Height="450" Width="495.5">
+        Title="TelaCadastroFuncionario" Height="382" Width="495.5">
     <Grid Background="#FFC8C8C8">
         <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="44,88,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Width="208"/>
         <TextBox x:Name="txtCPF" HorizontalAlignment="Left" Height="23" Margin="44,124,0,0" TextWrapping="Wrap" Text="CPF" VerticalAlignment="Top" Width="208"/>
         <TextBox x:Name="txtNasc" HorizontalAlignment="Left" Height="23" Margin="44,160,0,0" TextWrapping="Wrap" Text="Data Nascimento" VerticalAlignment="Top" Width="208"/>
         <TextBox x:Name="txtEmpresa" HorizontalAlignment="Left" Height="23" Margin="44,196,0,0" TextWrapping="Wrap" Text="Empresa" VerticalAlignment="Top" Width="208"/>
         <Button x:Name="Voltar" Content="Voltar" HorizontalAlignment="Left" Margin="45,299,0,0" VerticalAlignment="Top" Width="75" Click="Home_Click"/>
-        <Button x:Name="Cadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="177,299,0,0" VerticalAlignment="Top" Width="74" Click="Cadastrar_Click"/>
+        <Button x:Name="Cadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="177,298,0,0" VerticalAlignment="Top" Width="74" Click="Cadastrar_Click"/>
         <TextBox x:Name="txtMatricula" HorizontalAlignment="Left" Height="23" Margin="44,261,0,0" TextWrapping="Wrap" Text="Matrícula" VerticalAlignment="Top" Width="208"/>
         <Label x:Name="txtblock" Content="Cadastro Funcionário" HorizontalAlignment="Left" Margin="29,10,0,0" VerticalAlignment="Top" Height="71" Width="438" FontFamily="Calibri" FontWeight="Bold" FontSize="48"/>
         <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="44,229,0,0" TextWrapping="Wrap" Text="Telefone" VerticalAlignment="Top" Width="208"/>
+        <Calendar HorizontalAlignment="Left" Margin="295,177,-1,0" VerticalAlignment="Top" Height="163" Width="194"/>
 
     </Grid>
 </Window>

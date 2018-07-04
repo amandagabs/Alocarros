@@ -49,26 +49,7 @@ namespace ControleAcesso
             Close();
         }
 
-        private void CadastroVisitante_Click(object sender, RoutedEventArgs e)
-        {
-            TelaCadastroVisitante tela = new TelaCadastroVisitante();
-            tela.show();
-            Close();
-        }
-
-        private void ListarVisitante_Click(object sender, RoutedEventArgs e)
-        {
-            TelaListarVisitante tela = new TelaListarVisitante();
-            tela.show();
-            Close();
-        }
-
-        private void EditarVisitante_Click(object sender, RoutedEventArgs e)
-        {
-            TelaEditarVisitante tela = new TelaEditarVisitante();
-            tela.Show();
-            Close();
-        }
+        
 
         private void Grid_ContextMenuClosing(object sender, ContextMenuEventArgs e)
         {

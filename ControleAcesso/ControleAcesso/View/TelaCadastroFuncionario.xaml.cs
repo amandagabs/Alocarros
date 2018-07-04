@@ -44,6 +44,8 @@ namespace ControleAcesso.View
             funcionario.Telefone = txtTelefone.Text;
             funcionario.Empresa = txtEmpresa.Text;
             funcionarioController.Adicionar(funcionario);
+
+            MessageBox.Show("Funcionário cadastrado com sucesso.");
         }
     }
 }
