@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ControleAcesso.Controller;
+using ControleAcesso.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,17 +17,53 @@ using System.Windows.Shapes;
 namespace ControleAcesso.View
 {
     /// <summary>
-    /// Interaction logic for TelaListarFuncionario.xaml
+    /// Lógica interna para TelaListarFuncionario.xaml
     /// </summary>
     public partial class TelaListarFuncionario : Window
     {
         public TelaListarFuncionario()
         {
             InitializeComponent();
+
+            AtualizarGrid(Nome.Text = "");
         }
 
-        private void Cadastrar_Click(object sender, RoutedEventArgs e)
+        private void AtualizarGrid(string find ="")
         {
+            FuncionarioController funcionarioController = new FuncionarioController();
+            Lista_de_Cadastros.ItemsSource = funcionarioController.ListarFuncionarios(find);
+        }
+
+        private void Excluir_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Funcionario funcionario = (Funcionario)Lista_de_Cadastros.Items[Lista_de_Cadastros.SelectedIndex];
+                if (funcionario.FuncionarioID > 0)
+                {
+                    MessageBoxResult result = MessageBox.Show("Deseja mesmo remover este funcionário?", "", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (result == MessageBoxResult.Yes)
+                    {
+                        Controller.FuncionarioController funcionarioController = new FuncionarioController();
+                        funcionarioController.Desativar(funcionario);
+                        MessageBox.Show("Funcionário removido com sucesso.");
+                        AtualizarGrid(Nome.Text);
+                    }
+                }
+            }
+            catch { }
+        }
+
+         private void Pesquisar_Click(object sender, RoutedEventArgs e)
+        {
+            AtualizarGrid(Nome.Text);
+        }
+
+        private void Voltar_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow tela = new MainWindow();
+            tela.Show();
+            Close();
 
         }
     }

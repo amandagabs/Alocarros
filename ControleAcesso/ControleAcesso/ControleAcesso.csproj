@@ -68,6 +68,9 @@
     <Compile Include="View\TelaCadastroFuncionario.xaml.cs">
       <DependentUpon>TelaCadastroFuncionario.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\TelaListarFuncionario.xaml.cs">
+      <DependentUpon>TelaListarFuncionario.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
