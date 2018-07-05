@@ -12,7 +12,8 @@ namespace ControleAcesso.Controller
         
         }
 
-        public DbSet<Funcionario> Funcionarios { get; set; }
+        public DbSet<Funcionario> Funcionario { get; set; }
+
 
 
 

@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 
 namespace ControleAcesso.View
 {
-    /// <summary>
+    /// < summary>
     /// Lógica interna para TelaListarFuncionario.xaml
     /// </summary>
     public partial class TelaListarFuncionario : Window
@@ -24,16 +24,24 @@ namespace ControleAcesso.View
         public TelaListarFuncionario()
         {
             InitializeComponent();
-
-            AtualizarGrid(Nome.Text = "");
+            AtualizarGrid();
+            Nome.Text = "";
         }
 
-        private void AtualizarGrid(string find ="")
+        private void AtualizarGrid(string find = "")
         {
             FuncionarioController funcionarioController = new FuncionarioController();
             Lista_de_Cadastros.ItemsSource = funcionarioController.ListarFuncionarios(find);
+            try
+            {
+                for (int i = 0; i < 6; i++)
+                {
+                    if (i == 0) Lista_de_Cadastros.Columns[i].Visibility = Visibility.Hidden;
+                }
+                
+                    }
+            catch { }
         }
-
         private void Excluir_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -54,7 +62,7 @@ namespace ControleAcesso.View
             catch { }
         }
 
-         private void Pesquisar_Click(object sender, RoutedEventArgs e)
+        private void Pesquisar_Click(object sender, RoutedEventArgs e)
         {
             AtualizarGrid(Nome.Text);
         }
@@ -66,5 +74,28 @@ namespace ControleAcesso.View
             Close();
 
         }
+
+        private void Editar_Click(object sender, RoutedEventArgs e)
+        {
+           
+            try
+            {
+                Funcionario funcionario = (Funcionario)Lista_de_Cadastros.Items[Lista_de_Cadastros.SelectedIndex];
+                if (funcionario.FuncionarioID > 0)
+                {
+                    TelaEditarFuncionario tela = new TelaEditarFuncionario(funcionario);
+                    tela.Show();
+                    Close();
+                }
+            }
+            catch { }
+        }
+
+        private void Lista_de_Cadastros_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+
+        }
     }
+    
 }

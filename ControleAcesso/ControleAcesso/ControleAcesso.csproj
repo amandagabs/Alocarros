@@ -68,6 +68,9 @@
     <Compile Include="View\TelaCadastroFuncionario.xaml.cs">
       <DependentUpon>TelaCadastroFuncionario.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\TelaEditarFuncionario.xaml.cs">
+      <DependentUpon>TelaEditarFuncionario.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\TelaListarFuncionario.xaml.cs">
       <DependentUpon>TelaListarFuncionario.xaml</DependentUpon>
     </Compile>

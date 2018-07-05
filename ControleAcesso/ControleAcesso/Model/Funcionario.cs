@@ -23,6 +23,8 @@ namespace ControleAcesso.Model
 
         public string Empresa { get; set; }
 
+        public string Matricula { get; set;}
+
         public bool Ativo { get; set; }
     }
 }

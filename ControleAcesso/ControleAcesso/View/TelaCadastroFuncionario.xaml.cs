@@ -38,14 +38,16 @@ namespace ControleAcesso.View
         {
             FuncionarioController funcionarioController = new FuncionarioController();
             Funcionario funcionario = new Funcionario();
-            funcionario.Nome = txtNome.Text;
-            funcionario.CPF = txtCPF.Text;
-            funcionario.Nasc = txtNasc.Text;
-            funcionario.Telefone = txtTelefone.Text;
-            funcionario.Empresa = txtEmpresa.Text;
+            funcionario.Nome = Nome.Text;
+            funcionario.CPF = CPF.Text;
+            funcionario.Nasc = Nasc.Text;
+            funcionario.Telefone = Telefone.Text;
+            funcionario.Empresa = Empresa.Text;
+            funcionario.Matricula = Matricula.Text;
             funcionarioController.Adicionar(funcionario);
 
             MessageBox.Show("Funcionário cadastrado com sucesso.");
         }
+
     }
 }

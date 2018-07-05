@@ -1,4 +1,5 @@
-﻿using ControleAcesso.View;
+﻿using ControleAcesso.Model;
+using ControleAcesso.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,7 @@ namespace ControleAcesso
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly Funcionario func;
 
         public MainWindow()
         {
@@ -44,14 +46,19 @@ namespace ControleAcesso
 
         private void EditarFuncionario_Click(object sender, RoutedEventArgs e)
         {
-            TelaEditarFuncionario tela = new TelaEditarFuncionario();
+            TelaEditarFuncionario tela = new TelaEditarFuncionario(func);
             tela.Show();
             Close();
+        }    
+
+       
+        
+        private void Grid_ContextMenuClosing(object sender, ContextMenuEventArgs e)
+        {
+
         }
 
-        
-
-        private void Grid_ContextMenuClosing(object sender, ContextMenuEventArgs e)
+        private void CadastroVisitante_Click(object sender, RoutedEventArgs e)
         {
 
         }

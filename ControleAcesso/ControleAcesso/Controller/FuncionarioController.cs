@@ -12,15 +12,15 @@ namespace ControleAcesso.Controller
         private Contexto contexto = new Contexto();
         public void Adicionar(Funcionario funcionario)
         {
-            contexto.Funcionarios.Add(funcionario);
+            contexto.Funcionario.Add(funcionario);
             contexto.SaveChanges();
         }
 
         public IList<Funcionario> ListarFuncionarios(string find = "")
         {
-            if(find.Length == 0) return contexto.Funcionarios.ToList();
+            if(find.Length == 0) return contexto.Funcionario.ToList();
 
-            return contexto.Funcionarios.Where(f => f.CPF.Contains(find) || f.Nome.ToLower().Contains(find.ToLower())).ToList();
+            return contexto.Funcionario.Where(f => f.CPF.Contains(find) || f.Nome.ToLower().Contains(find.ToLower())).ToList();
         }
 
         public void Atualizar(Funcionario entity)
